@@ -38,6 +38,7 @@ export default function(state = initialState, action) {
             }
 
         case ADD_ITEM:
+            console.log('ACTION PAYLOAD', action.payload);
             return {
                 ...state,
                 items: [...state.items, action.payload]
